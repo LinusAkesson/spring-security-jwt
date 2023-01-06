@@ -27,7 +27,9 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests()
                 .requestMatchers(
                         "/api/v1/auth/**",
-                        "/blog"
+                        "/blog",
+                        "/login",
+                        "/"
                 ) // Lista på sidor man INTE behöver tokens för att besöka
                 .permitAll()                                // Gör så att ALLA har tillgång
                 .anyRequest()                               // Alla andra sidor MÅSTE ha tokens

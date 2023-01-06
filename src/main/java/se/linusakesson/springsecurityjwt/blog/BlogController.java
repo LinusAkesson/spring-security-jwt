@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BlogController {
 
     @GetMapping
-    public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("Hello from the blog section");
+    public String hello() {
+        return "blog";
     }
 }
